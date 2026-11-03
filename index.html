@@ -1,0 +1,467 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+<meta name="robots" content="index, follow">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Esosba – Rechtliches / Legal</title>
+<style>
+  :root {
+    --blue: #1a56a0;
+    --blue-light: #e8f0fb;
+    --text: #1a1a1a;
+    --muted: #555;
+    --border: #dde3ed;
+    --bg: #f7f9fc;
+    --warn: #b45309;
+    --warn-bg: #fffbeb;
+  }
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+  body { font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif; font-size: 16px; line-height: 1.7; color: var(--text); background: var(--bg); }
+
+  header { background: var(--blue); color: #fff; padding: 2.5rem 1.5rem 2rem; text-align: center; }
+  header h1 { font-size: 2rem; font-weight: 700; letter-spacing: -0.5px; }
+  header p { margin-top: 0.4rem; opacity: 0.85; font-size: 0.95rem; }
+
+  nav { background: #fff; border-bottom: 1px solid var(--border); position: sticky; top: 0; z-index: 10; }
+  nav ul { display: flex; flex-wrap: wrap; gap: 0; list-style: none; max-width: 860px; margin: 0 auto; padding: 0 1rem; }
+  nav a { display: block; padding: 0.85rem 1rem; font-size: 0.88rem; color: var(--blue); text-decoration: none; white-space: nowrap; border-bottom: 2px solid transparent; }
+  nav a:hover { border-bottom-color: var(--blue); }
+
+  .lang-switch { background: #fff; border-bottom: 1px solid var(--border); text-align: center; padding: 0.6rem; font-size: 0.85rem; }
+  .lang-switch button { background: none; border: 1px solid var(--border); border-radius: 4px; padding: 0.3rem 0.8rem; margin: 0 0.25rem; cursor: pointer; color: var(--blue); font-size: 0.85rem; }
+  .lang-switch button.active { background: var(--blue); color: #fff; border-color: var(--blue); }
+
+  main { max-width: 860px; margin: 0 auto; padding: 2rem 1.5rem 4rem; }
+
+  .lang-de, .lang-en { display: none; }
+  .lang-de.active, .lang-en.active { display: block; }
+
+  section { margin-bottom: 3rem; scroll-margin-top: 80px; }
+  section + section { border-top: 1px solid var(--border); padding-top: 2.5rem; }
+
+  h2 { font-size: 1.4rem; font-weight: 700; color: var(--blue); margin-bottom: 1rem; }
+  h3 { font-size: 1.05rem; font-weight: 600; color: var(--text); margin: 1.5rem 0 0.5rem; }
+  p { margin-bottom: 0.9rem; color: var(--text); }
+  ul { margin: 0.5rem 0 0.9rem 1.4rem; }
+  li { margin-bottom: 0.3rem; }
+
+  .warn-box { background: var(--warn-bg); border: 1px solid #fcd34d; border-left: 4px solid var(--warn); border-radius: 6px; padding: 1rem 1.2rem; margin: 1.2rem 0; font-size: 0.93rem; color: var(--warn); }
+  .placeholder { background: #fff8f0; border: 1px dashed #f97316; border-radius: 6px; padding: 0.8rem 1rem; margin: 0.8rem 0; font-size: 0.88rem; color: #92400e; }
+  .placeholder strong { display: block; margin-bottom: 0.3rem; }
+
+  table { width: 100%; border-collapse: collapse; font-size: 0.88rem; margin: 1rem 0; }
+  th { background: var(--blue); color: #fff; padding: 0.6rem 0.8rem; text-align: left; }
+  td { padding: 0.5rem 0.8rem; border-bottom: 1px solid var(--border); }
+  tr:nth-child(even) td { background: var(--blue-light); }
+  .ok { color: #166534; }
+  .warn { color: var(--warn); font-weight: 600; }
+
+  footer { text-align: center; padding: 2rem; font-size: 0.82rem; color: var(--muted); border-top: 1px solid var(--border); background: #fff; }
+</style>
+</head>
+<body>
+
+<header>
+  <h1>Esosba</h1>
+  <p>Rechtliche Informationen &nbsp;|&nbsp; Legal Information</p>
+</header>
+
+<div class="lang-switch">
+  <button class="active" onclick="setLang('de')" id="btn-de">🇩🇪 Deutsch</button>
+  <button onclick="setLang('en')" id="btn-en">🇬🇧 English</button>
+</div>
+
+<nav>
+  <ul id="nav-de" class="lang-de active">
+    <li><a href="#de-impressum">Impressum</a></li>
+    <li><a href="#de-datenschutz">Datenschutz</a></li>
+    <li><a href="#de-agb">AGB</a></li>
+    <li><a href="#de-bildnachweis">Bildnachweis</a></li>
+  </ul>
+  <ul id="nav-en" class="lang-en">
+    <li><a href="#en-imprint">Imprint</a></li>
+    <li><a href="#en-privacy">Privacy Policy</a></li>
+    <li><a href="#en-terms">Terms of Use</a></li>
+    <li><a href="#en-credits">Image Credits</a></li>
+  </ul>
+</nav>
+
+<main>
+
+<!-- ========== DEUTSCH ========== -->
+<div class="lang-de active">
+
+  <section id="de-impressum">
+    <h2>Impressum</h2>
+    <p>Angaben gemäß § 5 DDG:</p>
+    <p><strong>Vincent Stillner</strong><br>
+    [Straße und Hausnummer]<br>
+    [PLZ und Ort]<br>
+    Deutschland</p>
+    <h3>Kontakt</h3>
+    <p>E-Mail: esosba.app@gmail.com</p>
+    <h3>Verantwortlich für den Inhalt</h3>
+    <p>[Vor- und Nachname], [Adresse wie oben] (§ 18 Abs. 2 MStV)</p>
+    <p style="font-size:0.88rem;color:var(--muted);">Stand: Juni 2026</p>
+  </section>
+
+  <section id="de-datenschutz">
+    <h2>Datenschutzerklärung</h2>
+
+    <h3>1. Verantwortlicher</h3>
+    <p>[Name und Anschrift des Betreibers, wie im Impressum]<br>E-Mail: esosba.app@gmail.com</p>
+
+    <h3>2. Grundsatz: Offline-App mit gezielten Ausnahmen</h3>
+    <p>Die App „Esosba" ist überwiegend eine Offline-Anwendung. Der Betreiber betreibt keine eigenen Server. Personenbezogene Daten werden nur in dem unten beschriebenen Umfang verarbeitet; an den Betreiber gelangen lediglich anonyme Nutzungsstatistiken (siehe Punkt 8).</p>
+
+    <h3>3. Lokal gespeicherte Daten</h3>
+    <p>Alle von dir eingegebenen Daten werden lokal auf deinem Gerät gespeichert, insbesondere:</p>
+    <ul>
+      <li>Fahrzeugdaten, Termine und Notizen</li>
+      <li>Persönliche Angaben (Halter, Kontaktdaten, optional Führerschein)</li>
+      <li>Versicherungs- und Werkstattdaten</li>
+      <li>Fotos und Dokumente, die du hinzufügst</li>
+      <li>Angaben im Unfallbericht</li>
+    </ul>
+    <p>Diese Daten sind für den Betreiber nicht zugänglich. Hast du auf deinem Gerät Backups aktiviert (iCloud bei Apple bzw. Google-Backup bei Android), werden sie – wie die Daten anderer Apps – in diesem persönlichen Backup gesichert; dafür gelten die Bestimmungen von Apple bzw. Google. Beim Löschen der App werden die Daten vom Gerät entfernt.</p>
+
+    <h3>4. Weitergabe an Dritte</h3>
+    <p>Der Betreiber verkauft keine Daten und gibt keine Daten weiter. Eine Übermittlung an Dritte erfolgt nur in den unter Punkt 6 bis 10 beschriebenen Fällen.</p>
+
+    <h3>5. App Store / Google Play</h3>
+    <p>Beim Herunterladen der App über den Apple App Store oder Google Play Store können von den jeweiligen Plattformbetreibern Daten erhoben werden (z. B. Gerätekennung, IP-Adresse). Für diese Datenverarbeitungen sind ausschließlich Apple bzw. Google verantwortlich.</p>
+
+    <h3>6. Standortdaten</h3>
+    <p>Die App greift nur mit deiner ausdrücklichen Einwilligung auf den Standort deines Geräts zu, und zwar ausschließlich für:</p>
+    <ul>
+      <li>SOS-Notruf: Ermittlung des Landes, um die passende Notrufnummer zu wählen</li>
+      <li>Unfallbericht: Eintragen des Unfallorts als Adresse</li>
+      <li>Werkstatt kontaktieren (Panne): auf Wunsch Adresse und Kartenlink in die Nachricht an deine Werkstatt einfügen. Der Standort wird erst übermittelt, wenn du die Nachricht selbst per WhatsApp oder E-Mail absendest; dann gelten die Bestimmungen des jeweiligen Dienstes und deiner Werkstatt (siehe Punkt 10).</li>
+    </ul>
+    <p>Um die Koordinaten in ein Land bzw. eine Adresse umzuwandeln, nutzt die App den Ortungsdienst des Betriebssystems. Dabei werden die Koordinaten an Apple (iOS) bzw. Google (Android) übermittelt; es gelten deren Datenschutzbestimmungen. Die App selbst speichert den Standort nicht, außer als Unfallort in einem von dir angelegten Unfallbericht (lokal).</p>
+    <p>Unter Android liest die App für den SOS-Notruf zuerst das Land des Mobilfunknetzes aus, in dem dein Gerät gerade eingebucht ist. Das geschieht nur auf dem Gerät, ohne Standort und ohne Übermittlung; erst wenn kein Netz verfügbar ist, wird der Standort verwendet.</p>
+    <p><strong>Rechtsgrundlage:</strong> Art. 6 Abs. 1 lit. a DSGVO (Einwilligung). Du kannst die Standortfreigabe jederzeit in den Systemeinstellungen deines Geräts widerrufen.</p>
+
+    <h3>7. Serverzeit-Abfrage zur Lizenzprüfung</h3>
+    <p>Beim Start der App wird eine anonyme Zeitabfrage an externe Server gesendet, um die Systemuhr des Geräts auf Manipulation zu prüfen. Dabei werden folgende Dienste kontaktiert:</p>
+    <ul>
+      <li>worldtimeapi.org – öffentliche Zeitserver-API</li>
+      <li>timeapi.io – öffentliche Zeitserver-API (Ausweichdienst)</li>
+      <li>google.com – Auswertung des HTTP-Antwort-Headers (nur Zeitstempel, kein Seiteninhalt)</li>
+    </ul>
+    <p>Es werden keine Inhalte oder Nutzerdaten übertragen. Technisch bedingt erhalten die Anbieter deine IP-Adresse und können diese protokollieren; dies unterliegt deren eigenen Datenschutzbestimmungen. Die abgerufene Serverzeit wird lokal gespeichert und nicht an den Betreiber übertragen.</p>
+    <p><strong>Rechtsgrundlage:</strong> Art. 6 Abs. 1 lit. f DSGVO (berechtigtes Interesse – Schutz vor Lizenzmissbrauch).</p>
+
+    <h3>8. Anonyme Nutzungsstatistik (TelemetryDeck)</h3>
+    <p>Um zu verstehen, welche Funktionen genutzt werden, sendet die App anonyme Nutzungsereignisse (z. B. „Unfallbericht erstellt“ oder „Anleitung Reifenwechsel geöffnet“) an TelemetryDeck. Anbieter ist die TelemetryDeck GmbH, Deutschland. Übermittelt werden ausschließlich:</p>
+    <ul>
+      <li>Name und Zeitpunkt des Ereignisses</li>
+      <li>technische Eckdaten: App-Version, Betriebssystem und Version, Gerätetyp, Spracheinstellung</li>
+      <li>eine zufällig erzeugte, gehashte Kennung, die keinen Rückschluss auf deine Person zulässt</li>
+    </ul>
+    <p>Inhalte, die du in der App eingibst (z. B. Namen, Kennzeichen, Unfallberichte, Suchbegriffe, Standort), werden nie übertragen. TelemetryDeck speichert nach eigenen Angaben keine IP-Adressen; die Verarbeitung erfolgt auf Servern in der EU.</p>
+    <p>Du kannst die Statistik jederzeit unter Info &amp; Rechtliches → „Anonyme Nutzungsstatistik“ abschalten. Dann werden keine Ereignisse mehr gesendet.</p>
+    <p><strong>Rechtsgrundlage:</strong> Art. 6 Abs. 1 lit. f DSGVO (berechtigtes Interesse an der Verbesserung der App).</p>
+
+    <h3>9. Feedback über Google Forms</h3>
+    <p>Wenn du über „Feedback senden" Rückmeldung gibst, öffnet sich ein Formular von Google Forms in deinem Browser. Anbieter ist Google Ireland Limited, Gordon House, Barrow Street, Dublin 4, Irland. Dabei verarbeitet Google deine IP-Adresse sowie die Angaben, die du in das Formular einträgst; eine Übermittlung in die USA ist möglich. Google ist nach dem EU-US Data Privacy Framework zertifiziert. Es gelten die Datenschutzbestimmungen von Google (policies.google.com/privacy).</p>
+    <p>Die Nutzung ist freiwillig. Bitte gib im Formular keine sensiblen Daten (z. B. Kennzeichen, Versicherungsdaten) ein.</p>
+    <p><strong>Rechtsgrundlage:</strong> Art. 6 Abs. 1 lit. a DSGVO (Einwilligung durch freiwilliges Absenden).</p>
+
+    <h3>10. Unfallbericht, Teilen und externe Links</h3>
+    <p>Ein Unfallbericht kann Daten anderer Personen enthalten (z. B. Unfallgegner, Zeugen). Diese Daten werden lokal auf deinem Gerät gespeichert (ggf. auch in deinem Geräte-Backup, siehe Punkt 3). Der Betreiber hat keinen Zugriff darauf.</p>
+    <p>Wenn du einen Bericht, Fahrzeugdaten, ein Foto oder ein Dokument teilst (z. B. per E-Mail oder Messenger), geschieht das ausschließlich auf deine Veranlassung über die Teilen-Funktion deines Geräts; der Betreiber erhält diese Daten nicht. Für die weitere Verarbeitung ist der von dir gewählte Empfänger bzw. Dienst verantwortlich.</p>
+    <p>Links zu externen Webseiten öffnen sich in deinem Browser; Anrufe (z. B. Notruf, Pannendienst) werden über die Telefon-App deines Geräts gestartet. Für diese gelten die Datenschutzbestimmungen der jeweiligen Anbieter.</p>
+
+    <h3>11. Berechtigungen</h3>
+    <p>Die App fragt folgende Berechtigungen an. Du kannst sie jederzeit in den Systemeinstellungen deines Geräts widerrufen:</p>
+    <ul>
+      <li>Kamera: Taschenlampe, Scannen des Lizenz-QR-Codes, Fotos für Fahrzeug und Unfallbericht</li>
+      <li>Fotos / Dateien: Auswahl von Bildern und Dokumenten, die lokal gespeichert werden</li>
+      <li>Standort: siehe Punkt 6</li>
+      <li>Mitteilungen: Erinnerungen an Fahrzeugtermine (werden lokal auf dem Gerät geplant)</li>
+    </ul>
+
+    <h3>12. Rechte der Betroffenen</h3>
+    <p>Soweit personenbezogene Daten verarbeitet werden, stehen dir folgende Rechte zu: Auskunft (Art. 15), Berichtigung (Art. 16), Löschung (Art. 17), Einschränkung (Art. 18), Datenübertragbarkeit (Art. 20) sowie das Recht auf Widerspruch (Art. 21 DSGVO). Eine erteilte Einwilligung kannst du jederzeit mit Wirkung für die Zukunft widerrufen. Anfragen an: esosba.app@gmail.com</p>
+
+    <h3>13. Beschwerderecht</h3>
+    <p>Du hast das Recht, dich bei einer Datenschutz-Aufsichtsbehörde zu beschweren, insbesondere in dem EU-Mitgliedstaat deines gewöhnlichen Aufenthaltsorts.</p>
+
+    <h3>14. Änderungen</h3>
+    <p>Die jeweils aktuelle Version ist in der App abrufbar. Stand: Juni 2026.</p>
+
+    <h3>Hosting dieser Website</h3>
+    <p>Diese Seite wird über GitHub Pages bereitgestellt (GitHub Inc., USA). Beim Aufruf verarbeitet GitHub technisch notwendige Verbindungsdaten wie deine IP-Adresse, um die Seite auszuliefern und vor Missbrauch zu schützen. Rechtsgrundlage: Art. 6 Abs. 1 lit. f DSGVO (berechtigtes Interesse an einer sicheren, kostenlosen Bereitstellung). Die Website setzt keine Cookies und nutzt keine Analyse-Werkzeuge. Weitere Informationen: GitHub Privacy Statement.</p>
+
+  </section>
+
+  <section id="de-agb">
+    <h2>Nutzungsbedingungen (AGB)</h2>
+
+    <h3>§ 1 Geltungsbereich</h3>
+    <p>Diese Nutzungsbedingungen gelten für die Nutzung der mobilen App „Esosba". Durch die Nutzung der App erklärt der Nutzer sein Einverständnis mit diesen Bedingungen.</p>
+
+    <h3>§ 2 Leistungsbeschreibung</h3>
+    <p>Die App stellt folgende Funktionen bereit:</p>
+    <ul>
+      <li>Allgemeine Informationen, Checklisten und Anleitungen zur Pannenhilfe und Fahrzeugwartung</li>
+      <li>Fahrzeugterminkalender und Dokumentenverwaltung (lokal gespeichert)</li>
+      <li>Unfallberichtgenerator</li>
+      <li>Taschenlampe und Werkstattlicht</li>
+      <li>Allgemeine rechtliche Hinweise (keine individuelle Rechtsberatung)</li>
+      <li>Werkzeugempfehlungen</li>
+      <li>Weltweite Pannendienstliste und Notrufnummern</li>
+      <li>Checklisten für Fahrzeug- und Beladungschecks</li>
+    </ul>
+    <p>Alle Inhalte sind rein informativ und unverbindlich.</p>
+
+    <h3>§ 3 Kein Ersatz für Fachberatung</h3>
+    <p>Die App ersetzt keine professionelle Beratung durch Kfz-Werkstätten, Pannendienste, Rettungskräfte oder Rechtsanwälte. Bei Gefahr für Leib und Leben sofort den Notruf wählen. Die rechtlichen Hinweise in der App stellen keine Rechtsberatung im Sinne des RDG dar.</p>
+
+    <h3>§ 4 Haftungsausschluss</h3>
+    <p>Der Betreiber übernimmt keine Haftung für:</p>
+    <ul>
+      <li>Schäden an Fahrzeug, Personen oder Eigentum durch das Befolgen der Anleitungen</li>
+      <li>Unvollständige, fehlerhafte oder veraltete Informationen</li>
+      <li>Technische Störungen oder Ausfälle der App</li>
+      <li>Die Richtigkeit der Pannendienstliste und Notrufnummern</li>
+      <li>Datenverluste durch Deinstallation oder technische Fehler</li>
+    </ul>
+    <p>Diese Haftungsbeschränkung gilt nicht für Schäden aus der Verletzung des Lebens, des Körpers oder der Gesundheit sowie für vorsätzliche oder grob fahrlässige Pflichtverletzungen.</p>
+
+    <h3>§ 5 Nutzungsrechte</h3>
+    <p>Der Betreiber räumt dem Nutzer ein einfaches, nicht übertragbares Nutzungsrecht ein. Eine Vervielfältigung oder Weitergabe der App ohne ausdrückliche Zustimmung ist untersagt.</p>
+
+    <h3>§ 6–10 (Urheberrecht, Verfügbarkeit, Änderungsvorbehalt, Mindestalter 16 Jahre, Anwendbares Recht: Bundesrepublik Deutschland)</h3>
+    <p>Details sind im vollständigen Dokument enthalten, welches in der App jederzeit abrufbar ist.</p>
+  </section>
+
+  <section id="de-bildnachweis">
+    <h2>Bildnachweis</h2>
+    <table>
+      <thead><tr><th>Datei</th><th>Beschreibung</th><th>Autor</th><th>Lizenz</th><th>Status</th></tr></thead>
+      <tbody>
+        <tr><td>wheel.svg</td><td>Reifen/Rad-Icon</td><td>Wikimedia Commons</td><td>Public Domain</td><td class="ok">✅ OK</td></tr>
+        <tr><td>Schneeketten.svg</td><td>Schneeketten-Icon</td><td>Wikimedia Commons</td><td>Public Domain</td><td class="ok">✅ OK</td></tr>
+        <tr><td>Motorkontrollle.svg</td><td>Motor-Kontrollleuchte</td><td>Chris828</td><td>Public Domain</td><td class="ok">✅ OK</td></tr>
+        <tr><td>oel.svg</td><td>Öldruck-Warnleuchte</td><td>Chris828</td><td>Public Domain</td><td class="ok">✅ OK</td></tr>
+        <tr><td>Ladekontrollle.svg</td><td>Batterie-Kontrollleuchte</td><td>Chris828</td><td>Public Domain</td><td class="ok">✅ OK</td></tr>
+        <tr><td>engine-coolant-svgrepo-com.svg</td><td>Kühler-Temp-Warnleuchte</td><td>SVG Repo</td><td>CC0 1.0</td><td class="ok">✅ OK</td></tr>
+        <tr><td>insufficient-coolant-svgrepo-com.svg</td><td>Kühlmittel-Nachfüllen</td><td>SVG Repo</td><td>CC0 1.0</td><td class="ok">✅ OK</td></tr>
+        <tr><td>abs.svg</td><td>ABS-Kontrollleuchte</td><td>Chris828</td><td>Public Domain</td><td class="ok">✅ OK</td></tr>
+        <tr><td>airbag-svgrepo-com.svg</td><td>Airbag-Kontrollleuchte</td><td>SVG Repo</td><td>CC0 1.0</td><td class="ok">✅ OK</td></tr>
+        <tr><td>Druckverlust.svg</td><td>Reifendruck TPMS (Bildausschnitt angepasst)</td><td>Hydrargyrum</td><td>CC BY-SA 3.0</td><td class="ok">✅ OK (Nennung!)</td></tr>
+        <tr><td>ESP2.svg</td><td>ESP/ASR-Kontrollleuchte</td><td>Chris828</td><td>Public Domain</td><td class="ok">✅ OK</td></tr>
+        <tr><td>Bremsbelag.svg</td><td>Bremsbelag-Warnleuchte</td><td>Chris828</td><td>Public Domain</td><td class="ok">✅ OK</td></tr>
+        <tr><td>Servo.svg</td><td>Servolenkung-Leuchte</td><td>Chris828</td><td>CC0 1.0</td><td class="ok">✅ OK</td></tr>
+        <tr><td>Glühkerze.svg</td><td>Glühkerzen-Leuchte</td><td>Chris828</td><td>Public Domain</td><td class="ok">✅ OK</td></tr>
+        <tr><td>Getriebe.svg</td><td>Getriebewarnleuchte</td><td>Eigene Arbeit</td><td>—</td><td class="ok">✅ OK</td></tr>
+        <tr><td>DPF.svg</td><td>Dieselpartikelfilter</td><td>Chris828</td><td>CC0 1.0</td><td class="ok">✅ OK</td></tr>
+        <tr><td>Material Icons</td><td>Navigations-Icons</td><td>Google</td><td>Apache 2.0</td><td class="ok">✅ OK</td></tr>
+        <tr><td>Feather Icons</td><td>Pfeile/Haken/Kreuze in Fotos</td><td>Cole Bemis</td><td>MIT</td><td class="ok">✅ OK (Nennung!)</td></tr>
+        <tr><td><a href="https://commons.wikimedia.org/wiki/File:Abschleppseil_Automobile_equipment_01.JPG">abschleppen_seil.jpg</a></td><td>Abschleppseil (Foto, verkleinert)</td><td>Iswoar</td><td><a href="https://creativecommons.org/licenses/by-sa/3.0/deed.de">CC BY-SA 3.0</a></td><td class="ok">✅ OK (Nennung!)</td></tr>
+        <tr><td><a href="https://commons.wikimedia.org/wiki/File:Towing_-_2_automobiles.jpg">abschleppen_stange.jpg</a></td><td>Abschleppen mit Stange (Foto, zugeschnitten und verkleinert)</td><td>Cjp24</td><td><a href="https://creativecommons.org/licenses/by-sa/4.0/deed.de">CC BY-SA 4.0</a></td><td class="ok">✅ OK (Nennung!)</td></tr>
+        <tr><td><a href="https://commons.wikimedia.org/wiki/File:AbschleppenSVG.svg">abschleppen_zeichnung.png</a></td><td>Abschleppen, Zeichnung (gedreht, Rand ergänzt)</td><td>Dreiraumzimmer</td><td>Public Domain</td><td class="ok">✅ OK</td></tr>
+        <tr><td>Fotos</td><td>Alle übrigen Fotos in der App</td><td>Eigene Aufnahmen</td><td>Alle Rechte vorbehalten</td><td class="ok">✅ OK</td></tr>
+      </tbody>
+    </table>
+  </section>
+
+</div>
+
+<!-- ========== ENGLISH ========== -->
+<div class="lang-en">
+
+  <section id="en-imprint">
+    <h2>Legal Notice (Imprint)</h2>
+    <p>Information pursuant to § 5 DDG (German Digital Services Act):</p>
+    <p><strong>Vincent Stillner</strong><br>
+    [Street address]<br>
+    [Postal code and city]<br>
+    Germany</p>
+    <h3>Contact</h3>
+    <p>Email: esosba.app@gmail.com</p>
+    <h3>Responsible for content</h3>
+    <p>[Full name], [address as above] (§ 18 para. 2 MStV)</p>
+    <p style="font-size:0.88rem;color:var(--muted);">As of: June 2026</p>
+  </section>
+
+  <section id="en-privacy">
+    <h2>Privacy Policy</h2>
+
+    <h3>1. Controller</h3>
+    <p>[Name and address of operator, as stated in the Legal Notice]<br>Email: esosba.app@gmail.com</p>
+
+    <h3>2. Principle: Predominantly offline</h3>
+    <p>"Esosba" is primarily an offline application. The operator runs no servers of its own. Personal data is processed only to the extent described below; the operator only receives anonymous usage statistics (see Section 8).</p>
+
+    <h3>3. Locally stored data</h3>
+    <p>All data you enter is stored locally on your device, in particular:</p>
+    <ul>
+      <li>Vehicle data, appointments and notes</li>
+      <li>Personal details (owner, contact details, optionally driving licence)</li>
+      <li>Insurance and garage details</li>
+      <li>Photos and documents you add</li>
+      <li>Information in the accident report</li>
+    </ul>
+    <p>This data is not accessible to the operator. If you have backups enabled on your device (iCloud on Apple or Google backup on Android), it is included in this personal backup like the data of other apps; the terms of Apple or Google apply. Deleting the app removes the data from the device.</p>
+
+    <h3>4. Sharing with third parties</h3>
+    <p>The operator does not sell or share any data. Data is only transmitted to third parties in the cases described in Sections 6 to 10.</p>
+
+    <h3>5. App Store / Google Play</h3>
+    <p>When downloading the app via the Apple App Store or Google Play Store, the respective platform operators may collect data (e.g. device identifier, IP address). Their privacy policies apply.</p>
+
+    <h3>6. Location data</h3>
+    <p>The app accesses your device's location only with your explicit consent and exclusively for:</p>
+    <ul>
+      <li>SOS emergency call: determining the country to dial the correct emergency number</li>
+      <li>Accident report: entering the accident location as an address</li>
+      <li>Contact garage (breakdown): optionally inserting your address and a map link into the message to your garage. Your location is only transmitted when you send the message yourself via WhatsApp or email; the terms of that service and of your garage then apply (see Section 10).</li>
+    </ul>
+    <p>To convert coordinates into a country or address, the app uses the operating system's geocoding service. The coordinates are transmitted to Apple (iOS) or Google (Android); their privacy policies apply. The app itself does not store your location, except as the accident location in an accident report you create (locally).</p>
+    <p>On Android, for the SOS emergency call the app first reads the country of the mobile network your device is currently connected to. This happens only on the device, without location and without any transmission; your location is only used if no network is available.</p>
+    <p><strong>Legal basis:</strong> Art. 6(1)(a) GDPR (consent). You may revoke location access at any time in your device's system settings.</p>
+
+    <h3>7. Server time request for licence validation</h3>
+    <p>When the app starts, an anonymous time request is sent to external servers to verify that the device clock has not been manipulated. The following services are contacted:</p>
+    <ul>
+      <li>worldtimeapi.org – public time server API</li>
+      <li>timeapi.io – public time server API (fallback)</li>
+      <li>google.com – HTTP response header evaluation (timestamp only, no page content)</li>
+    </ul>
+    <p>No content or user data is transmitted. For technical reasons, the providers receive your IP address and may log it; this is subject to their own privacy policies. The retrieved server time is stored locally and is not transmitted to the operator.</p>
+    <p><strong>Legal basis:</strong> Art. 6(1)(f) GDPR (legitimate interest – protection against licence misuse).</p>
+
+    <h3>8. Anonymous usage statistics (TelemetryDeck)</h3>
+    <p>To understand which features are used, the app sends anonymous usage events (e.g. "accident report created" or "tyre change guide opened") to TelemetryDeck. The provider is TelemetryDeck GmbH, Germany. Only the following is transmitted:</p>
+    <ul>
+      <li>name and time of the event</li>
+      <li>technical details: app version, operating system and version, device type, language setting</li>
+      <li>a randomly generated, hashed identifier that cannot be traced back to you</li>
+    </ul>
+    <p>Content you enter in the app (e.g. names, licence plates, accident reports, search terms, location) is never transmitted. According to TelemetryDeck, IP addresses are not stored; processing takes place on servers in the EU.</p>
+    <p>You can switch off the statistics at any time under Info &amp; Legal → "Anonymous usage statistics". No further events will then be sent.</p>
+    <p><strong>Legal basis:</strong> Art. 6(1)(f) GDPR (legitimate interest in improving the app).</p>
+
+    <h3>9. Feedback via Google Forms</h3>
+    <p>If you use "Send Feedback", a Google Forms form opens in your browser. The provider is Google Ireland Limited, Gordon House, Barrow Street, Dublin 4, Ireland. Google processes your IP address and the information you enter in the form; a transfer to the USA is possible. Google is certified under the EU-US Data Privacy Framework. Google's privacy policy applies (policies.google.com/privacy).</p>
+    <p>Use is voluntary. Please do not enter sensitive data (e.g. licence plates, insurance details) in the form.</p>
+    <p><strong>Legal basis:</strong> Art. 6(1)(a) GDPR (consent by voluntary submission).</p>
+
+    <h3>10. Accident report, sharing and external links</h3>
+    <p>An accident report may contain data of other persons (e.g. the other party, witnesses). This data is stored locally on your device (possibly also in your device backup, see Section 3). The operator has no access to it.</p>
+    <p>If you share a report, vehicle data, a photo or a document (e.g. by email or messenger), this happens solely at your initiative via your device's share function; the operator does not receive this data. The recipient or service you choose is responsible for any further processing.</p>
+    <p>Links to external websites open in your browser; calls (e.g. emergency, breakdown service) are started via your device's phone app. The privacy policies of the respective providers apply.</p>
+
+    <h3>11. Permissions</h3>
+    <p>The app requests the following permissions. You can revoke them at any time in your device's system settings:</p>
+    <ul>
+      <li>Camera: flashlight, scanning the licence QR code, photos for vehicle and accident report</li>
+      <li>Photos / files: selecting images and documents that are stored locally</li>
+      <li>Location: see Section 6</li>
+      <li>Notifications: reminders for vehicle appointments (scheduled locally on the device)</li>
+    </ul>
+
+    <h3>12. User rights (GDPR)</h3>
+    <p>Where personal data is processed, you have the right to access (Art. 15), rectification (Art. 16), erasure (Art. 17), restriction (Art. 18), data portability (Art. 20), and to object (Art. 21 GDPR). You may withdraw any consent given at any time with effect for the future. Contact: esosba.app@gmail.com</p>
+
+    <h3>13. Right to lodge a complaint</h3>
+    <p>You have the right to lodge a complaint with a data protection supervisory authority in your EU member state of residence.</p>
+
+    <h3>14. Changes</h3>
+    <p>The current version is accessible within the app. As of: June 2026.</p>
+
+    <h3>Hosting of this website</h3>
+    <p>This page is served via GitHub Pages (GitHub Inc., USA). When you open it, GitHub processes technically necessary connection data such as your IP address to deliver the page and protect it against abuse. Legal basis: Art. 6(1)(f) GDPR (legitimate interest in secure, free hosting). The website sets no cookies and uses no analytics. More information: GitHub Privacy Statement.</p>
+
+  </section>
+
+  <section id="en-terms">
+    <h2>Terms of Use</h2>
+
+    <h3>§ 1 Scope</h3>
+    <p>These Terms of Use apply to the use of the mobile app "Esosba". By using the App, the user agrees to these terms.</p>
+
+    <h3>§ 2 Description of services</h3>
+    <ul>
+      <li>General information, checklists and instructions for roadside assistance and vehicle maintenance</li>
+      <li>Vehicle appointment calendar and document management (local only)</li>
+      <li>Accident report generator</li>
+      <li>Flashlight and workshop light</li>
+      <li>General legal guidance (not individual legal advice)</li>
+      <li>Tool recommendations</li>
+      <li>Worldwide breakdown service list and emergency numbers</li>
+      <li>Checklists for vehicle and load inspections</li>
+    </ul>
+    <p>All content is purely informational and non-binding.</p>
+
+    <h3>§ 3 No substitute for professional advice</h3>
+    <p>The App does not replace professional advice from repair shops, breakdown services, emergency responders, or attorneys. In case of danger to life, call the emergency number immediately. The legal guidance does not constitute legal advice within the meaning of applicable law.</p>
+
+    <h3>§ 4 Limitation of liability</h3>
+    <p>The operator assumes no liability for:</p>
+    <ul>
+      <li>Damage to vehicle, persons or property from following the instructions</li>
+      <li>Incomplete, inaccurate or outdated information</li>
+      <li>Technical malfunctions or failures of the App</li>
+      <li>Accuracy of the breakdown service list and emergency numbers</li>
+      <li>Data loss from uninstallation or technical errors</li>
+    </ul>
+    <p>This limitation does not apply to damages from injury to life, body or health, or intentional/grossly negligent breaches of duty.</p>
+
+    <h3>§ 5–10</h3>
+    <p>License, copyright, availability, amendments, minimum age (16), governing law (Federal Republic of Germany) — full details are accessible within the app at all times.</p>
+  </section>
+
+  <section id="en-credits">
+    <h2>Image Credits</h2>
+    <table>
+      <thead><tr><th>File</th><th>Description</th><th>Author</th><th>License</th><th>Status</th></tr></thead>
+      <tbody>
+        <tr><td>wheel.svg</td><td>Tyre/wheel icon</td><td>Wikimedia Commons</td><td>Public Domain</td><td class="ok">✅ OK</td></tr>
+        <tr><td>Schneeketten.svg</td><td>Snow chains icon</td><td>Wikimedia Commons</td><td>Public Domain</td><td class="ok">✅ OK</td></tr>
+        <tr><td>Motorkontrollle.svg</td><td>Engine warning light</td><td>Chris828</td><td>Public Domain</td><td class="ok">✅ OK</td></tr>
+        <tr><td>oel.svg</td><td>Oil pressure warning</td><td>Chris828</td><td>Public Domain</td><td class="ok">✅ OK</td></tr>
+        <tr><td>Ladekontrollle.svg</td><td>Battery warning light</td><td>Chris828</td><td>Public Domain</td><td class="ok">✅ OK</td></tr>
+        <tr><td>engine-coolant-svgrepo-com.svg</td><td>Coolant temp warning</td><td>SVG Repo</td><td>CC0 1.0</td><td class="ok">✅ OK</td></tr>
+        <tr><td>insufficient-coolant-svgrepo-com.svg</td><td>Add coolant light</td><td>SVG Repo</td><td>CC0 1.0</td><td class="ok">✅ OK</td></tr>
+        <tr><td>abs.svg</td><td>ABS warning light</td><td>Chris828</td><td>Public Domain</td><td class="ok">✅ OK</td></tr>
+        <tr><td>airbag-svgrepo-com.svg</td><td>Airbag warning light</td><td>SVG Repo</td><td>CC0 1.0</td><td class="ok">✅ OK</td></tr>
+        <tr><td>Druckverlust.svg</td><td>Tyre pressure TPMS (cropped)</td><td>Hydrargyrum</td><td>CC BY-SA 3.0</td><td class="ok">✅ OK (attribution!)</td></tr>
+        <tr><td>ESP2.svg</td><td>ESP/ASR warning light</td><td>Chris828</td><td>Public Domain</td><td class="ok">✅ OK</td></tr>
+        <tr><td>Bremsbelag.svg</td><td>Brake pad warning</td><td>Chris828</td><td>Public Domain</td><td class="ok">✅ OK</td></tr>
+        <tr><td>Servo.svg</td><td>Power steering light</td><td>Chris828</td><td>CC0 1.0</td><td class="ok">✅ OK</td></tr>
+        <tr><td>Glühkerze.svg</td><td>Glow plug light</td><td>Chris828</td><td>Public Domain</td><td class="ok">✅ OK</td></tr>
+        <tr><td>Getriebe.svg</td><td>Gearbox warning light</td><td>Own work</td><td>—</td><td class="ok">✅ OK</td></tr>
+        <tr><td>DPF.svg</td><td>Diesel particulate filter</td><td>Chris828</td><td>CC0 1.0</td><td class="ok">✅ OK</td></tr>
+        <tr><td>Material Icons</td><td>Navigation icons</td><td>Google</td><td>Apache 2.0</td><td class="ok">✅ OK</td></tr>
+        <tr><td>Feather Icons</td><td>Arrows/checks/crosses in photos</td><td>Cole Bemis</td><td>MIT</td><td class="ok">✅ OK (attribution!)</td></tr>
+        <tr><td><a href="https://commons.wikimedia.org/wiki/File:Abschleppseil_Automobile_equipment_01.JPG">abschleppen_seil.jpg</a></td><td>Tow rope (photo, resized)</td><td>Iswoar</td><td><a href="https://creativecommons.org/licenses/by-sa/3.0/">CC BY-SA 3.0</a></td><td class="ok">✅ OK (attribution!)</td></tr>
+        <tr><td><a href="https://commons.wikimedia.org/wiki/File:Towing_-_2_automobiles.jpg">abschleppen_stange.jpg</a></td><td>Towing with a tow bar (photo, cropped and resized)</td><td>Cjp24</td><td><a href="https://creativecommons.org/licenses/by-sa/4.0/">CC BY-SA 4.0</a></td><td class="ok">✅ OK (attribution!)</td></tr>
+        <tr><td><a href="https://commons.wikimedia.org/wiki/File:AbschleppenSVG.svg">abschleppen_zeichnung.png</a></td><td>Towing, drawing (rotated, border added)</td><td>Dreiraumzimmer</td><td>Public Domain</td><td class="ok">✅ OK</td></tr>
+        <tr><td>Photos</td><td>All other photos in the app</td><td>Own work</td><td>All rights reserved</td><td class="ok">✅ OK</td></tr>
+      </tbody>
+    </table>
+  </section>
+
+</div>
+</main>
+
+<footer>
+  <p>Esosba &nbsp;|&nbsp; Stand / As of: Juni 2026 &nbsp;|&nbsp; <a href="mailto:esosba.app@gmail.com">esosba.app@gmail.com</a></p>
+</footer>
+
+<script>
+function setLang(lang) {
+  document.querySelectorAll('.lang-de, .lang-en').forEach(el => el.classList.remove('active'));
+  document.querySelectorAll('.lang-de').forEach(el => { if(lang==='de') el.classList.add('active'); });
+  document.querySelectorAll('.lang-en').forEach(el => { if(lang==='en') el.classList.add('active'); });
+  document.getElementById('btn-de').classList.toggle('active', lang==='de');
+  document.getElementById('btn-en').classList.toggle('active', lang==='en');
+}
+</script>
+</body>
+</html>
